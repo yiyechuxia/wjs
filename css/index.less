@@ -1,0 +1,490 @@
+@import url("./wjsfont.less");
+.wjs_view {}
+
+
+/* 头部工具栏开始*/
+
+.top_tool {
+    .row>div {
+        border: 1px solid #000;
+        border-right: none;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+        a {
+            color: #808080;
+        }
+        .btn {
+            color: #fff;
+            background: #d9534f;
+        }
+    }
+}
+
+
+/* 头部工具栏结束*/
+
+
+/* 头部导航开始*/
+
+.wjs_nav {
+    a {
+        height: 80px;
+        &:hover,
+        &:focus {
+            border-bottom: 1px solid red;
+        }
+    }
+    .wjsfont {
+        font-size: 70px;
+    }
+    .navbar-header {
+        height: 80px;
+    }
+    .navbar {
+        margin-bottom: 0;
+    }
+    .navbar-nav>li>a {
+        padding-top: 0;
+        padding-bottom: 0;
+        line-height: 80px;
+    }
+    .navbar-brand {
+        padding: 5px 15px;
+        &:hover {
+            border-bottom: none;
+        }
+    }
+    .wjsfont-logo {
+        color: red;
+    }
+}
+
+
+/* 头部导航结束*/
+
+
+/* 轮播图开始*/
+
+.wjs_carousel {
+    img {
+        width: 100%;
+    }
+}
+
+
+/* 轮播图结束*/
+
+
+/* 支付保障开始*/
+
+.wjs_buy {
+    padding: 80px 0 60px 0;
+    .media-left {
+        a {
+            color:#ccc;
+        }
+    }
+    .media-body{
+        a{
+            color:#ccc;
+        }
+    }
+    .wjsfont {
+        text-decoration: none;
+        font-size: 45px;
+    }
+    h4 {
+        font-size: 23px;
+    }
+    .row>div {
+        margin-bottom: 20px;
+    }
+}
+
+
+/* 支付保障结束*/
+
+
+/* 正排队开始*/
+
+.wjs_list {
+    padding: 30px 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    a {
+        border-bottom: 1px dashed red;
+        color: red;
+    }
+}
+
+
+/* 正排队结束*/
+
+
+/* 特别推荐 开始*/
+
+.recommend {
+    // 灰色体验卡
+    .gray_content {
+        display: block;
+        height: 180px;
+        position: relative;
+        color: #666;
+        box-shadow: 0px 0px 2px 1px #666; // 左边
+        .r_left {
+            padding-right: 80px;
+            width: 100%;
+            background: #f7f7f7;
+            height: 100%;
+            text-align: center;
+            padding-left: 5px;
+            h3 {
+                padding-top: 25px;
+            }
+            .rr_left {
+                float: left;
+                text-align: left;
+            }
+            .rr_right {
+                float: right;
+                text-align: right;
+                padding-right: 5px;
+            }
+        } // 右边
+        .r_right {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 80px;
+            height: 100%;
+            background: f7f7f7;
+            padding-top: 60px;
+            text-align: center;
+            border-left: 1px dashed #000;
+            &::after {
+                content: " ";
+                display: block;
+                width: 20px;
+                height: 20px;
+                background: #fff;
+                position: absolute;
+                left: 0;
+                top: 0;
+                border-radius: 50%;
+                transform: translate(-50%, -50%);
+                box-shadow: 0px 1px 0px 0px #666;
+            }
+            &::before {
+                content: " ";
+                display: block;
+                width: 20px;
+                height: 20px;
+                background: #fff;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                border-radius: 50%;
+                transform: translate(-50%, 50%);
+                box-shadow: 0px -1px 0px 0px #666;
+            }
+        }
+    } // 红色体验卡
+    .red_content {
+        display: block;
+        height: 180px;
+        position: relative;
+        color: #fff;
+        box-shadow: 0px 0px 2px 1px #666; // 左边
+        .r_left {
+            padding-right: 80px;
+            width: 100%;
+            background: #ff0000;
+            height: 100%;
+            text-align: center;
+            padding-left: 5px;
+            position: relative;
+            span {
+                font-size: 40px;
+                position: absolute;
+                left: -1px;
+                top: 0;
+            }
+            h3 {
+                padding-top: 25px;
+            }
+            .rr_left {
+                float: left;
+                text-align: left;
+            }
+            .rr_right {
+                float: right;
+                text-align: right;
+                padding-right: 5px;
+            }
+        } // 右边
+        .r_right {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 80px;
+            height: 100%;
+            background: f7f7f7;
+            padding-top: 60px;
+            text-align: center;
+            border-left: 1px dashed #fff;
+            &::after {
+                content: " ";
+                display: block;
+                width: 20px;
+                height: 20px;
+                background: #fff;
+                position: absolute;
+                left: 0;
+                top: 0;
+                border-radius: 50%;
+                transform: translate(-50%, -50%);
+                box-shadow: 0px 1px 0px 0px #666;
+            }
+            &::before {
+                content: " ";
+                display: block;
+                width: 20px;
+                height: 20px;
+                background: #fff;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                border-radius: 50%;
+                transform: translate(-50%, 50%);
+                box-shadow: 0px -1px 0px 0px #666;
+            }
+        }
+    } // 灰色体验卡2
+    .gray_content2 {
+        display: block;
+        height: 180px;
+        position: relative;
+        color: #666;
+        box-shadow: 0px 0px 2px 1px #666; // 左边
+        .r_left {
+            padding-right: 80px;
+            width: 100%;
+            background: #f7f7f7;
+            height: 100%;
+            text-align: center;
+            padding-left: 5px;
+            h3 {
+                padding-top: 25px;
+            }
+            .rr_left {
+                float: left;
+                text-align: left;
+                width: 50%;
+            }
+            .rr_right {
+                float: right;
+                text-align: right;
+                padding-right: 5px;
+                width: 50%;
+            }
+        } // 右边
+        .r_right {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 80px;
+            height: 100%;
+            background: f7f7f7;
+            padding-top: 60px;
+            text-align: center;
+            border-left: 1px dashed #000;
+            span:nth-of-type(1) {
+                font-size: 12px;
+                border: 1px solid #0a0;
+                color: #0a0;
+            }
+            span:nth-of-type(2) {
+                font-size: 12px;
+                border: 1px solid red;
+                color: red;
+            }
+            &::after {
+                content: " ";
+                display: block;
+                width: 20px;
+                height: 20px;
+                background: #fff;
+                position: absolute;
+                left: 0;
+                top: 0;
+                border-radius: 50%;
+                transform: translate(-50%, -50%);
+                box-shadow: 0px 1px 0px 0px #666;
+            }
+            &::before {
+                content: " ";
+                display: block;
+                width: 20px;
+                height: 20px;
+                background: #fff;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                border-radius: 50%;
+                transform: translate(-50%, 50%);
+                box-shadow: 0px -1px 0px 0px #666;
+            }
+        }
+    } // 红色体验卡2
+    .red_content2 {
+        display: block;
+        height: 180px;
+        position: relative;
+        color: #fff;
+        box-shadow: 0px 0px 2px 1px #666; // 左边
+        .r_left {
+            padding-right: 80px;
+            width: 100%;
+            background: #ff0000;
+            height: 100%;
+            text-align: center;
+            padding-left: 5px;
+            position: relative;
+            span {
+                font-size: 40px;
+                position: absolute;
+                left: -1px;
+                top: 0;
+            }
+            h3 {
+                padding-top: 25px;
+            }
+            .rr_left {
+                float: left;
+                text-align: left;
+            }
+            .rr_right {
+                float: right;
+                text-align: right;
+                padding-right: 5px;
+            }
+        } // 右边
+        .r_right {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 80px;
+            height: 100%;
+            background: f7f7f7;
+            padding-top: 60px;
+            text-align: center;
+            border-left: 1px dashed #fff;
+            &::after {
+                content: " ";
+                display: block;
+                width: 20px;
+                height: 20px;
+                background: #fff;
+                position: absolute;
+                left: 0;
+                top: 0;
+                border-radius: 50%;
+                transform: translate(-50%, -50%);
+                box-shadow: 0px 1px 0px 0px #666;
+            }
+            &::before {
+                content: " ";
+                display: block;
+                width: 20px;
+                height: 20px;
+                background: #fff;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                border-radius: 50%;
+                transform: translate(-50%, 50%);
+                box-shadow: 0px -1px 0px 0px #666;
+            }
+        }
+    }
+}
+
+
+/* 特别推荐 结束*/
+
+
+/* 全部新闻 开始*/
+
+.wjs_news {
+    // 全部新闻
+    .wjs_Allnew {
+        text-align: left;
+        font-size: 25px;
+        border-bottom: 1px solid #000;
+        position: relative;
+        &:after {
+            content: " ";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            display: block;
+            width: 10px;
+            height: 10px;
+            border: 1px solid #000;
+            border-radius: 50%;
+            transform: translate(100%, 50%);
+        }
+    } // tab栏
+    .wjs_text {
+        position: relative;
+        .line{
+            width: 0;
+            height:85%;
+            border:1px dashed #000;
+            position:absolute;
+            left: 50px;
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li {
+                margin-bottom: 80px;
+                a {
+                    display: block;
+                   height:70px;
+                   width: 70px;
+                    background: #ccc;
+                    border-radius: 50%;
+                    .wjsfont {
+                        color:#fff;
+                        font-size: 40px;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                    &:focus,&:hover{
+                        background:red;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* 全部新闻 结束*/
+
+/* 合作伙伴开始*/
+.partner{
+     text-align: center;
+            a{
+                padding:0 20px;
+                color:#ccc;
+                .wjsfont{
+                    font-size: 80px;
+                }
+            }
+}
+/* 合作伙伴结束*/

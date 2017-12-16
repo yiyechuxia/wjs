@@ -1,0 +1,518 @@
+/* 导入 字体文件 */
+@font-face {
+  font-family: 'wjsfont';
+  src: url('../font/MiFie-Web-Font.eot');
+  src: url('../font/MiFie-Web-Font.eot?#iefix') format('embedded-opentype'), url('../font/MiFie-Web-Font.woff') format('woff'), url('font/MiFie-Web-Font.ttf') format('truetype'), url('../font/MiFie-Web-Font.svg') format('svg');
+}
+/* 定义 使用的class */
+.wjsfont {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'wjsfont';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+}
+.wjsfont-logo::before {
+  content: '\e920';
+}
+.wjsfont-name::before {
+  content: '\e921';
+}
+.wjsfont-e903::before {
+  content: '\e903';
+}
+.wjsfont-e901::before {
+  content: '\e901';
+}
+.wjsfont-e904::before {
+  content: '\e904';
+}
+.wjsfont-e905::before {
+  content: '\e905';
+}
+.wjsfont-e902::before {
+  content: '\e902';
+}
+/* 添加 产品列表的 文字样式 */
+.wjsfont-e915::before {
+  content: '\e915';
+}
+.wjsfont-new01::before {
+  content: "\e90e";
+}
+.wjsfont-new02::before {
+  content: "\e90f";
+}
+.wjsfont-new03::before {
+  content: "\e910";
+}
+.wjsfont-new04::before {
+  content: "\e911";
+}
+/* 网页 最下方的 合作单位 */
+.wjsfont-partner01::before {
+  content: "\e946";
+}
+.wjsfont-partner02::before {
+  content: "\e92f";
+}
+.wjsfont-partner03::before {
+  content: "\e92e";
+}
+.wjsfont-partner04::before {
+  content: "\e92a";
+}
+.wjsfont-partner05::before {
+  content: "\e929";
+}
+.wjsfont-partner06::before {
+  content: "\e931";
+}
+.wjsfont-partner07::before {
+  content: "\e92c";
+}
+.wjsfont-partner08::before {
+  content: "\e92b";
+}
+.wjsfont-partner09::before {
+  content: "\e92d";
+}
+/* 头部工具栏开始*/
+.top_tool .row > div {
+  border: 1px solid #000;
+  border-right: none;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+}
+.top_tool .row > div a {
+  color: #808080;
+}
+.top_tool .row > div .btn {
+  color: #fff;
+  background: #d9534f;
+}
+/* 头部工具栏结束*/
+/* 头部导航开始*/
+.wjs_nav a {
+  height: 80px;
+}
+.wjs_nav a:hover,
+.wjs_nav a:focus {
+  border-bottom: 1px solid red;
+}
+.wjs_nav .wjsfont {
+  font-size: 70px;
+}
+.wjs_nav .navbar-header {
+  height: 80px;
+}
+.wjs_nav .navbar {
+  margin-bottom: 0;
+}
+.wjs_nav .navbar-nav > li > a {
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 80px;
+}
+.wjs_nav .navbar-brand {
+  padding: 5px 15px;
+}
+.wjs_nav .navbar-brand:hover {
+  border-bottom: none;
+}
+.wjs_nav .wjsfont-logo {
+  color: red;
+}
+/* 头部导航结束*/
+/* 轮播图开始*/
+.wjs_carousel img {
+  width: 100%;
+}
+/* 轮播图结束*/
+/* 支付保障开始*/
+.wjs_buy {
+  padding: 80px 0 60px 0;
+}
+.wjs_buy .media-left a {
+  color: #ccc;
+}
+.wjs_buy .media-body a {
+  color: #ccc;
+}
+.wjs_buy .wjsfont {
+  text-decoration: none;
+  font-size: 45px;
+}
+.wjs_buy h4 {
+  font-size: 23px;
+}
+.wjs_buy .row > div {
+  margin-bottom: 20px;
+}
+/* 支付保障结束*/
+/* 正排队开始*/
+.wjs_list {
+  padding: 30px 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.wjs_list a {
+  border-bottom: 1px dashed red;
+  color: red;
+}
+/* 正排队结束*/
+/* 特别推荐 开始*/
+.recommend .gray_content {
+  display: block;
+  height: 180px;
+  position: relative;
+  color: #666;
+  box-shadow: 0px 0px 2px 1px #666;
+}
+.recommend .gray_content .r_left {
+  padding-right: 80px;
+  width: 100%;
+  background: #f7f7f7;
+  height: 100%;
+  text-align: center;
+  padding-left: 5px;
+}
+.recommend .gray_content .r_left h3 {
+  padding-top: 25px;
+}
+.recommend .gray_content .r_left .rr_left {
+  float: left;
+  text-align: left;
+}
+.recommend .gray_content .r_left .rr_right {
+  float: right;
+  text-align: right;
+  padding-right: 5px;
+}
+.recommend .gray_content .r_right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  background: f7f7f7;
+  padding-top: 60px;
+  text-align: center;
+  border-left: 1px dashed #000;
+}
+.recommend .gray_content .r_right::after {
+  content: " ";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 1px 0px 0px #666;
+}
+.recommend .gray_content .r_right::before {
+  content: " ";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 50%;
+  transform: translate(-50%, 50%);
+  box-shadow: 0px -1px 0px 0px #666;
+}
+.recommend .red_content {
+  display: block;
+  height: 180px;
+  position: relative;
+  color: #fff;
+  box-shadow: 0px 0px 2px 1px #666;
+}
+.recommend .red_content .r_left {
+  padding-right: 80px;
+  width: 100%;
+  background: #ff0000;
+  height: 100%;
+  text-align: center;
+  padding-left: 5px;
+  position: relative;
+}
+.recommend .red_content .r_left span {
+  font-size: 40px;
+  position: absolute;
+  left: -1px;
+  top: 0;
+}
+.recommend .red_content .r_left h3 {
+  padding-top: 25px;
+}
+.recommend .red_content .r_left .rr_left {
+  float: left;
+  text-align: left;
+}
+.recommend .red_content .r_left .rr_right {
+  float: right;
+  text-align: right;
+  padding-right: 5px;
+}
+.recommend .red_content .r_right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  background: f7f7f7;
+  padding-top: 60px;
+  text-align: center;
+  border-left: 1px dashed #fff;
+}
+.recommend .red_content .r_right::after {
+  content: " ";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 1px 0px 0px #666;
+}
+.recommend .red_content .r_right::before {
+  content: " ";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 50%;
+  transform: translate(-50%, 50%);
+  box-shadow: 0px -1px 0px 0px #666;
+}
+.recommend .gray_content2 {
+  display: block;
+  height: 180px;
+  position: relative;
+  color: #666;
+  box-shadow: 0px 0px 2px 1px #666;
+}
+.recommend .gray_content2 .r_left {
+  padding-right: 80px;
+  width: 100%;
+  background: #f7f7f7;
+  height: 100%;
+  text-align: center;
+  padding-left: 5px;
+}
+.recommend .gray_content2 .r_left h3 {
+  padding-top: 25px;
+}
+.recommend .gray_content2 .r_left .rr_left {
+  float: left;
+  text-align: left;
+  width: 50%;
+}
+.recommend .gray_content2 .r_left .rr_right {
+  float: right;
+  text-align: right;
+  padding-right: 5px;
+  width: 50%;
+}
+.recommend .gray_content2 .r_right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  background: f7f7f7;
+  padding-top: 60px;
+  text-align: center;
+  border-left: 1px dashed #000;
+}
+.recommend .gray_content2 .r_right span:nth-of-type(1) {
+  font-size: 12px;
+  border: 1px solid #0a0;
+  color: #0a0;
+}
+.recommend .gray_content2 .r_right span:nth-of-type(2) {
+  font-size: 12px;
+  border: 1px solid red;
+  color: red;
+}
+.recommend .gray_content2 .r_right::after {
+  content: " ";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 1px 0px 0px #666;
+}
+.recommend .gray_content2 .r_right::before {
+  content: " ";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 50%;
+  transform: translate(-50%, 50%);
+  box-shadow: 0px -1px 0px 0px #666;
+}
+.recommend .red_content2 {
+  display: block;
+  height: 180px;
+  position: relative;
+  color: #fff;
+  box-shadow: 0px 0px 2px 1px #666;
+}
+.recommend .red_content2 .r_left {
+  padding-right: 80px;
+  width: 100%;
+  background: #ff0000;
+  height: 100%;
+  text-align: center;
+  padding-left: 5px;
+  position: relative;
+}
+.recommend .red_content2 .r_left span {
+  font-size: 40px;
+  position: absolute;
+  left: -1px;
+  top: 0;
+}
+.recommend .red_content2 .r_left h3 {
+  padding-top: 25px;
+}
+.recommend .red_content2 .r_left .rr_left {
+  float: left;
+  text-align: left;
+}
+.recommend .red_content2 .r_left .rr_right {
+  float: right;
+  text-align: right;
+  padding-right: 5px;
+}
+.recommend .red_content2 .r_right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  background: f7f7f7;
+  padding-top: 60px;
+  text-align: center;
+  border-left: 1px dashed #fff;
+}
+.recommend .red_content2 .r_right::after {
+  content: " ";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 1px 0px 0px #666;
+}
+.recommend .red_content2 .r_right::before {
+  content: " ";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 50%;
+  transform: translate(-50%, 50%);
+  box-shadow: 0px -1px 0px 0px #666;
+}
+/* 特别推荐 结束*/
+/* 全部新闻 开始*/
+.wjs_news .wjs_Allnew {
+  text-align: left;
+  font-size: 25px;
+  border-bottom: 1px solid #000;
+  position: relative;
+}
+.wjs_news .wjs_Allnew:after {
+  content: " ";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  transform: translate(100%, 50%);
+}
+.wjs_news .wjs_text {
+  position: relative;
+}
+.wjs_news .wjs_text .line {
+  width: 0;
+  height: 85%;
+  border: 1px dashed #000;
+  position: absolute;
+  left: 50px;
+}
+.wjs_news .wjs_text ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.wjs_news .wjs_text ul li {
+  margin-bottom: 80px;
+}
+.wjs_news .wjs_text ul li a {
+  display: block;
+  height: 70px;
+  width: 70px;
+  background: #ccc;
+  border-radius: 50%;
+}
+.wjs_news .wjs_text ul li a .wjsfont {
+  color: #fff;
+  font-size: 40px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.wjs_news .wjs_text ul li a:focus,
+.wjs_news .wjs_text ul li a:hover {
+  background: red;
+}
+/* 全部新闻 结束*/
+/* 合作伙伴开始*/
+.partner {
+  text-align: center;
+}
+.partner a {
+  padding: 0 20px;
+  color: #ccc;
+}
+.partner a .wjsfont {
+  font-size: 80px;
+}
+/* 合作伙伴结束*/
